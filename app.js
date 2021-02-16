@@ -11,6 +11,11 @@ app.get("/", function(req, res){
 
 })
 
+app.post("/", function(req, res){
+  res.send("Thanks for posting that!")
+})
+
+
 // const query = "London";
 // const unit = "metric";
 // const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=" + unit + "&appid=" + process.env.API_KEY;
