@@ -6,7 +6,9 @@ const app = express();
 
 
 app.get("/", function(req, res){
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=Malaga&units=metric&appid=" + process.env.API_KEY;
+  const query = "London";
+  const unit = "metric";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&units=" + unit + "&appid=" + process.env.API_KEY;
 
   https.get(url, function(response){
     response.on("data", function(data){
