@@ -13,7 +13,9 @@ app.get("/", function(req, res){
       const weatherData = JSON.parse(data);
       const temp = weatherData.main.temp;
       const description = weatherData.weather[0].description;
-      res.send("<h1>The temperature in Málaga is " + temp + " degrees Celsius. The weather is currently " + description + ".</h1>")
+      res.write("<p>The weather is currently " + description + "</p>");
+      res.write("<h1>The temperature in Malaga is " + temp + " degrees Celsius.</h1>");
+      res.send()
     })
   })
 
