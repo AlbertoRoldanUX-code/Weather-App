@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Weather App</title>
-</head>
+  <body>
+    <div class="bg-light p-5 rounded-lg m-3">
+      <h1 class="display-4">Weather App</h1>
+      <p class="lead">Accurate Weather Forecast & Weather Radar MapWeather</p>
 
-<body>
-
-  <form action="/" method="post">
-    <label for="cityInput">City Name:</label>
-    <input id="cityInput" type="text" name="cityName">
-    <button type="submit">Go</button>
-  </form>
-
-
-
-
-</body>
-
+      <form action="/" method="post">
+        <div class="form-group col-md-4">
+          <label for="cityInput">City Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cityInput"
+            placeholder="Enter city"
+            name="cityName"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
